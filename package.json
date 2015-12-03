@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AlexBezuska/node-powermate-test.git"
+    "url": "https://github.com/AlexBezuska/Powermate-Servermate.git"
   },
   "author": "Alex Bezuska",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlexBezuska/node-powermate-test/issues"
+    "url": "https://github.com/AlexBezuska/Powermate-Servermateissues"
   },
-  "homepage": "https://github.com/AlexBezuska/node-powermate-test",
+  "homepage": "https://github.com/AlexBezuska/Powermate-Servermate",
   "dependencies": {
     "node-powermate": "0.0.3",
     "express": "^4.13.3"
