@@ -26,4 +26,11 @@ request if button is pressed
 http://0.0.0.0:8081/data
 ```
 
-This will return a data object containing
+This will return a data object containing:
+```javascript
+{
+  buttonDown: false,
+  wheelDelta: 0,
+  brightness: 0
+}
+```
