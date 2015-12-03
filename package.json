@@ -1,5 +1,5 @@
 {
-  "name": "Powermate Servermate",
+  "name": "powermate-servermate",
   "version": "0.0.0",
   "description": "Small Node Express server to send and recieve commands to the Griffin PowerMate..",
   "main": "index.js",
