@@ -8,22 +8,22 @@ npm install
 
 Start running the server
 ```bash
-node index
+npm start
 ```
 
 
 ### API usage:
 
-change brightness (range 0-255)
+change brightness (range 0-255)  (AJAX PUT)
 ```
 http://0.0.0.0:8081/brightness/187
 ```
 
 
 
-request if button is pressed
+Get the current status of the Powermate (AJAX GET)
 ```
-http://0.0.0.0:8081/data
+http://0.0.0.0:8081/status
 ```
 
 This will return a data object containing:

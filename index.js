@@ -27,11 +27,11 @@ powermate.on('wheelTurn', function(wheelDelta){
   data.wheelDelta = wheelDelta;
 });
 
-app.get('/data', function (req, res) {
+app.get('/status', function (req, res) {
   res.send(data);
 });
 
-app.get('/brightness/:value', function (req, res) {
+app.put('/brightness/:value', function (req, res) {
   if(req.params.value < 0 || isNaN(req.params.value)){
     data.brightness = 0;
   }else if(req.params.value > 255){
@@ -45,11 +45,4 @@ app.get('/brightness/:value', function (req, res) {
   });
 });
 
-var server = app.listen(8081, function () {
-
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log("Example app listening at http://%s:%s", host, port)
-
-});
+module.exports = app;
