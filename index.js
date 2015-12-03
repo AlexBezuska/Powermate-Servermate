@@ -25,9 +25,16 @@ app.get('/data', function (req, res) {
   res.send(data);
 });
 
-app.get('/:key/:value', function (req, res) {
-  data[req.params.key] = req.params.value;
-  powermate.setBrightness(parseInt(data.brightness), function(){
+app.get('/brightness/:value', function (req, res) {
+  if(req.params.value > 255){
+    data.brightness = 255;
+  }else if(req.params.value < 0){
+    data.brightness = 0;
+  }else{
+    data.brightness = parseInt(req.params.value);
+  }
+
+  powermate.setBrightness(data.brightness, function(){
     res.end();
   });
 });
