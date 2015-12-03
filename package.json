@@ -7,8 +7,8 @@
   "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start rest": "node bin/powermate-servermate.js",
-    "start ws": "node bin/powermate-servermate-ws.js"
+    "startrest": "node bin/powermate-servermate.js",
+    "startws": "node index-ws.js"
   },
   "repository": {
     "type": "git",
