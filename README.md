@@ -11,21 +11,34 @@ Powermate Servermate is an Express server wrapper for [node-powermate](https://w
 2. Fork this repo & clone it to your computer
 3. Run `npm install` inside the project folder
 4. Make sure a Griffin Powermate is plugged into your computer
-5. Run `npm start` inside the project folder to start Powermate Servermate listening to your Powermate
+5. Run `npm start rest` -or- `npm start ws` (more about this below) inside the project folder to start Powermate Servermate listening to your Powermate
+
+### Websockets usage:
+ Run `npm start ws` inside the project folder to start Powermate Servermate listening to your Powermate
+
+In your frontend JavaScript:
+```javascript
+ var ws = new WebSocket("ws://localhost:8081");
+ var powerMate = {buttonDown:false,wheelDelta:0,brightness:0};
+ ws.onmessage = function (e){
+   powerMate = JSON.parse(e.data);
+ };
+ ```
 
 
-### API usage:
 
-change brightness (range 0-255)  (AJAX PUT)
+### REST API usage:
+
+change brightness (range 0-255)
+```bash
+curl -X PUT http://0.0.0.0:8081/brightness/187
 ```
-http://0.0.0.0:8081/brightness/187
-```
 
 
+Get the current status of the Powermate
+```bash
+curl http://0.0.0.0:8081/status
 
-Get the current status of the Powermate (AJAX GET)
-```
-http://0.0.0.0:8081/status
 ```
 
 This will return a data object containing:

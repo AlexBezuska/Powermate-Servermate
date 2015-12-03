@@ -1,13 +1,14 @@
 {
   "name": "powermate-servermate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Small Node Express server to send and recieve commands to the Griffin PowerMate..",
   "main": "index.js",
   "bin": "bin/powermate-servermate.js",
   "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/powermate-servermate.js"
+    "start rest": "node bin/powermate-servermate.js",
+    "start ws": "node bin/powermate-servermate-ws.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "dependencies": {
     "node-powermate": "0.0.3",
     "express": "^4.13.3",
-    "websocket": "^1.0.22"
+    "websocket": "^1.0.22",
+    "ws": "^0.8.1"
   }
 }
