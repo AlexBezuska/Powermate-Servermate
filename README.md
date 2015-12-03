@@ -1,5 +1,7 @@
 # Powermate Servermate
 
+Designed for use with the [Griffin PowerMate](http://store.griffintechnology.com/laptops/powermate)
+An Express server wrapper for [node-powermate](https://www.npmjs.com/package/node-powermate) by [Sandeep Mistry](https://github.com/sandeepmistry).
 
 Install dependencies
 ```bash
