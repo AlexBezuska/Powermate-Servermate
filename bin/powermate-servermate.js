@@ -1,4 +1,4 @@
-var app = require("./index");
+var app = require("../index");
 
 var server = app.listen(8081, function () {
 
