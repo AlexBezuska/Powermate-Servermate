@@ -1,17 +1,17 @@
 # Powermate Servermate
 
-Designed for use with the [Griffin PowerMate](http://store.griffintechnology.com/laptops/powermate)
-An Express server wrapper for [node-powermate](https://www.npmjs.com/package/node-powermate) by [Sandeep Mistry](https://github.com/sandeepmistry).
+Designed for use with the [Griffin Powermate](http://store.griffintechnology.com/laptops/powermate)
 
-Install dependencies
-```bash
-npm install
-```
+Powermate Servermate is an Express server wrapper for [node-powermate](https://www.npmjs.com/package/node-powermate) by [Sandeep Mistry](https://github.com/sandeepmistry).
 
-Start running the server
-```bash
-npm start
-```
+# Get started
+
+
+1. Install [Node.js](https://nodejs.org)
+2. Fork this repo & clone it to your computer
+3. Run `npm install` inside the project folder
+4. Make sure a Griffin Powermate is plugged into your computer
+5. Run `npm start` inside the project folder to start Powermate Servermate listening to your Powermate
 
 
 ### API usage:
