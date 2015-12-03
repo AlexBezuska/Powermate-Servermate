@@ -21,6 +21,7 @@
   "homepage": "https://github.com/AlexBezuska/Powermate-Servermate",
   "dependencies": {
     "node-powermate": "0.0.3",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "websocket": "^1.0.22"
   }
 }
