@@ -1,0 +1,23 @@
+{
+  "name": "Powermate Servermate",
+  "version": "0.0.0",
+  "description": "Small Node Express server to send and recieve commands to the Griffin PowerMate..",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/AlexBezuska/node-powermate-test.git"
+  },
+  "author": "Alex Bezuska",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexBezuska/node-powermate-test/issues"
+  },
+  "homepage": "https://github.com/AlexBezuska/node-powermate-test",
+  "dependencies": {
+    "node-powermate": "0.0.3",
+    "express": "^4.13.3"
+  }
+}
